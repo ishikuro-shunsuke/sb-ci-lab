@@ -1,0 +1,16 @@
+{
+    "name": "Spring Boot Development",
+    "image": "mcr.microsoft.com/devcontainers/java:17",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "vscjava.vscode-java-pack",
+                "vmware.vscode-spring-boot",
+                "vscjava.vscode-gradle",
+                "redhat.java"
+            ]
+        }
+    },
+    "remoteUser": "root",
+    "postCreateCommand": "./gradlew build"
+} 

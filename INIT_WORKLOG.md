@@ -54,3 +54,14 @@ services:
 
 JAVA_TOOL_OPTIONS は公式ガイドの "Debugging the Application in a Docker Container" に記載されている。
 
+----
+
+# Eclipse で開発に関する考察
+
+Eclipse でモダンな開発は難しいかもしれない。
+
+- Gradle は Kotlin を推奨しているが、Eclipse では Kotlin プラグインがメンテナンスされておらず現行版は動作しない。
+- Docker Plugin は Eclipse ではメンテナンスされていないようで、docker compose も GUI では操作できない。
+- Spring Boot との統合が弱い。ホットリロード、プロパティ補完、REST API のテスト機能などクリティカルな部分が使いにくい。
+
+モダン Java 開発では Spring Boot, Gradle, Kotlin, Docker を使うことが多い。いずれも IntelliJ IDEA ではデフォルトでサポートしている。VS Code もある程度適応できる。
