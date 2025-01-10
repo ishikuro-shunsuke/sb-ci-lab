@@ -56,7 +56,7 @@ JAVA_TOOL_OPTIONS は公式ガイドの "Debugging the Application in a Docker C
 
 ----
 
-# Eclipse で開発に関する考察
+# Eclipse での開発に関する考察
 
 Eclipse でモダンな開発は難しいかもしれない。
 
